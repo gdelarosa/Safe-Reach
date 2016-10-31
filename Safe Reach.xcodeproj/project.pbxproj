@@ -87,6 +87,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5115845D1DC2E01F005572BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5115845E1DC2E027005572BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5115845F1DC2E030005572BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		512A578C1DBDC06B00E7FB7A = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +132,9 @@
 		512A57971DBDC06B00E7FB7A /* Safe Reach */ = {
 			isa = PBXGroup;
 			children = (
+				5115845F1DC2E030005572BF /* Controller */,
+				5115845E1DC2E027005572BF /* Model */,
+				5115845D1DC2E01F005572BF /* View */,
 				512A57981DBDC06B00E7FB7A /* AppDelegate.swift */,
 				512A579C1DBDC06B00E7FB7A /* SecondViewController.swift */,
 				512A57D11DBDCE0400E7FB7A /* MapViewController.swift */,
@@ -551,6 +575,7 @@
 				512A57C11DBDC06C00E7FB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		512A57C21DBDC06C00E7FB7A /* Build configuration list for PBXNativeTarget "Safe ReachTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +584,7 @@
 				512A57C41DBDC06C00E7FB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		512A57C51DBDC06C00E7FB7A /* Build configuration list for PBXNativeTarget "Safe ReachUITests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +593,7 @@
 				512A57C71DBDC06C00E7FB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

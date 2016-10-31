@@ -29,7 +29,7 @@ class MapViewController: UIViewController {
         checkLocationAuthorizationStatus()
     }
     
-    let regionRadius: CLLocationDistance = 10000
+    let regionRadius: CLLocationDistance = 100000
     func centerMapOnLocation(_ location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
