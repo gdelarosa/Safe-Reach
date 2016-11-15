@@ -20,6 +20,9 @@
 		512A57D01DBDCDDE00E7FB7A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57CF1DBDCDDE00E7FB7A /* Food.swift */; };
 		512A57D31DBDCE0400E7FB7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57D11DBDCE0400E7FB7A /* MapViewController.swift */; };
 		512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57D21DBDCE0400E7FB7A /* VCMapView.swift */; };
+		514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C8E1DDABD1B00505683 /* TableViewCell.swift */; };
+		514A9C921DDABD1B00505683 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C8F1DDABD1B00505683 /* TableViewController.swift */; };
+		514A9C931DDABD1B00505683 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C901DDABD1B00505683 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		512A57CF1DBDCDDE00E7FB7A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		512A57D11DBDCE0400E7FB7A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		512A57D21DBDCE0400E7FB7A /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		514A9C8E1DDABD1B00505683 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		514A9C8F1DDABD1B00505683 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		514A9C901DDABD1B00505683 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 		5115845D1DC2E01F005572BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51F7A4FB1DDAC76C007EB571 /* Map */,
+				514A9C8D1DDABD0300505683 /* TableView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -137,11 +145,6 @@
 				5115845D1DC2E01F005572BF /* View */,
 				512A57981DBDC06B00E7FB7A /* AppDelegate.swift */,
 				512A579C1DBDC06B00E7FB7A /* SecondViewController.swift */,
-				512A57D11DBDCE0400E7FB7A /* MapViewController.swift */,
-				512A57D21DBDCE0400E7FB7A /* VCMapView.swift */,
-				512A57CF1DBDCDDE00E7FB7A /* Food.swift */,
-				512A57CD1DBDCDBA00E7FB7A /* Food.json */,
-				512A57CB1DBDCD9B00E7FB7A /* JSON.swift */,
 				512A579E1DBDC06B00E7FB7A /* Main.storyboard */,
 				512A57A11DBDC06B00E7FB7A /* Assets.xcassets */,
 				512A57A31DBDC06B00E7FB7A /* LaunchScreen.storyboard */,
@@ -174,6 +177,28 @@
 				512A57C91DBDC8B100E7FB7A /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		514A9C8D1DDABD0300505683 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				514A9C8E1DDABD1B00505683 /* TableViewCell.swift */,
+				514A9C8F1DDABD1B00505683 /* TableViewController.swift */,
+				514A9C901DDABD1B00505683 /* DetailViewController.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		51F7A4FB1DDAC76C007EB571 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				512A57D11DBDCE0400E7FB7A /* MapViewController.swift */,
+				512A57D21DBDCE0400E7FB7A /* VCMapView.swift */,
+				512A57CF1DBDCDDE00E7FB7A /* Food.swift */,
+				512A57CD1DBDCDBA00E7FB7A /* Food.json */,
+				512A57CB1DBDCD9B00E7FB7A /* JSON.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,8 +347,11 @@
 				512A579D1DBDC06B00E7FB7A /* SecondViewController.swift in Sources */,
 				512A57D31DBDCE0400E7FB7A /* MapViewController.swift in Sources */,
 				512A57991DBDC06B00E7FB7A /* AppDelegate.swift in Sources */,
+				514A9C921DDABD1B00505683 /* TableViewController.swift in Sources */,
 				512A57D01DBDCDDE00E7FB7A /* Food.swift in Sources */,
 				512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */,
+				514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */,
+				514A9C931DDABD1B00505683 /* DetailViewController.swift in Sources */,
 				512A57CC1DBDCD9B00E7FB7A /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

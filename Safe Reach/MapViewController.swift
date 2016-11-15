@@ -12,11 +12,14 @@ import MapKit
 class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+  
     
     var foods = [Food]()
     var locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         mapView.delegate = self
         let initialLocation = CLLocation(latitude: 34.0522, longitude: -118.2437) // LA 
         centerMapOnLocation(initialLocation)
@@ -72,4 +75,6 @@ class MapViewController: UIViewController {
             locationManager.requestWhenInUseAuthorization()
         }
     }
+    
 }
+
