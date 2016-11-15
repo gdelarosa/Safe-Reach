@@ -2,8 +2,8 @@
 //  TableViewCell.swift
 //  TableViewSwift
 //
-//  Created by Matt Deuschle on 1/8/16.
-//  Copyright © 2016 Matt Deuschle. All rights reserved.
+//  Created by Gina De La Rosa on 11/14/16.
+//  Copyright © 2016 Gina De La Rosa. All rights reserved.
 //
 
 import UIKit

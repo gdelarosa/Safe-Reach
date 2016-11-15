@@ -2,8 +2,8 @@
 //  TableViewController.swift
 //  TableViewSwift
 //
-//  Created by Matt Deuschle on 1/8/16.
-//  Copyright © 2016 Matt Deuschle. All rights reserved.
+//  Created by Gina De La Rosa on 11/14/16.
+//  Copyright © 2016 Gina De La Rosa. All rights reserved.
 //
 
 import UIKit
@@ -49,7 +49,6 @@ class TableViewController: UITableViewController {
 
         // allocate our cell
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-
         // get cell to equal list from array
         cell.cellTitle.text = titleList[(indexPath as NSIndexPath).row]
         cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]

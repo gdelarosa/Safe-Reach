@@ -2,15 +2,15 @@
 //  DetialViewController.swift
 //  TableViewSwift
 //
-//  Created by Matt Deuschle on 1/8/16.
-//  Copyright © 2016 Matt Deuschle. All rights reserved.
+//  Created by Gina De La Rosa on 11/14/16.
+//  Copyright © 2016 Gina De La Rosa. All rights reserved.
 //
 
 import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet var detailImageView: UIImageView!
+  //  @IBOutlet var detailImageView: UIImageView!
 
     @IBOutlet var detailTitle: UILabel!
     
@@ -21,9 +21,11 @@ class DetailViewController: UIViewController {
 //    @IBOutlet var hobby: UILabel!
 //    @IBOutlet var weapon: UILabel!
 //
+    @IBOutlet weak var address: UILabel!
+
     var sentTitleData:String!
     var sentDescriptionData:String!
-    var sentImageData:String!
+  //  var sentImageData:String!
 
 
     override func viewDidLoad() {
@@ -33,12 +35,12 @@ class DetailViewController: UIViewController {
         detailTitle.text = sentTitleData
         detailDescription.text = sentDescriptionData
 
-        detailImageView.image = UIImage(named: sentImageData)
+       // detailImageView.image = UIImage(named: sentImageData)
 
 
         if detailTitle.text == "LGBT Center"
         {
-            
+            address.text = "12345 Los Angeles Blvd."
         }
 //        if detailTitle.text == "Bill"
 //        {
