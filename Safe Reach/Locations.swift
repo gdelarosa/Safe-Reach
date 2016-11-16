@@ -1,5 +1,5 @@
 //
-//  Food.swift
+//  Locations.swift
 //  Safe Reach
 //
 //  Created by Gina De La Rosa on 9/6/16.
@@ -10,7 +10,7 @@ import Foundation
 import MapKit
 import Contacts
 
-class Food: NSObject, MKAnnotation {
+class Locations: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
     let discipline: String
@@ -36,7 +36,7 @@ class Food: NSObject, MKAnnotation {
         return mapItem
     }
     
-    class func fromJSON(_ json: [JSONValue]) -> Food? {
+    class func fromJSON(_ json: [JSONValue]) -> Locations? {
         var title: String
         if let titleOrNil = json[16].string {
             title = titleOrNil
@@ -50,7 +50,7 @@ class Food: NSObject, MKAnnotation {
         let longitude = (json[19].string! as NSString).doubleValue
         let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         
-        return Food(title: title, locationName: locationName!, discipline: discipline!, coordinate: coordinate)
+        return Locations(title: title, locationName: locationName!, discipline: discipline!, coordinate: coordinate)
     }
     
     func pinColor() -> UIColor? {

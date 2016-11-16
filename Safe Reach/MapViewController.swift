@@ -14,7 +14,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
   
     
-    var foods = [Food]()
+    var locations = [Locations]()
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class MapViewController: UIViewController {
         let initialLocation = CLLocation(latitude: 34.0522, longitude: -118.2437) // LA 
         centerMapOnLocation(initialLocation)
         loadInitialDtata()
-        mapView.addAnnotations(foods)
+        mapView.addAnnotations(locations)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,7 +39,7 @@ class MapViewController: UIViewController {
     }
     
     func loadInitialDtata(){
-        let filename = Bundle.main.path(forResource: "Food", ofType: "json")
+        let filename = Bundle.main.path(forResource: "Location", ofType: "json")
         
         var data: Data?
         do{
@@ -59,9 +59,9 @@ class MapViewController: UIViewController {
         }
         
         if let jsonObject = jsonObject as? [String: AnyObject], let jsonData = JSONValue.fromObject(jsonObject as AnyObject)?["data"]?.array{
-            for foodJSON in jsonData {
-                if let foodJSON = foodJSON.array, let food = Food.fromJSON(foodJSON){
-                    foods.append(food)
+            for locationJSON in jsonData {
+                if let locationJSON = locationJSON.array, let location = Locations.fromJSON(locationJSON){
+                    locations.append(location)
                 }
             }
         }

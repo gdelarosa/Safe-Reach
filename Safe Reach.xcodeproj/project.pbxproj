@@ -16,13 +16,14 @@
 		512A57BB1DBDC06C00E7FB7A /* Safe_ReachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57BA1DBDC06C00E7FB7A /* Safe_ReachUITests.swift */; };
 		512A57CA1DBDC8B100E7FB7A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512A57C91DBDC8B100E7FB7A /* MapKit.framework */; };
 		512A57CC1DBDCD9B00E7FB7A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57CB1DBDCD9B00E7FB7A /* JSON.swift */; };
-		512A57CE1DBDCDBA00E7FB7A /* Food.json in Resources */ = {isa = PBXBuildFile; fileRef = 512A57CD1DBDCDBA00E7FB7A /* Food.json */; };
-		512A57D01DBDCDDE00E7FB7A /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57CF1DBDCDDE00E7FB7A /* Food.swift */; };
+		512A57CE1DBDCDBA00E7FB7A /* Location.json in Resources */ = {isa = PBXBuildFile; fileRef = 512A57CD1DBDCDBA00E7FB7A /* Location.json */; };
+		512A57D01DBDCDDE00E7FB7A /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57CF1DBDCDDE00E7FB7A /* Locations.swift */; };
 		512A57D31DBDCE0400E7FB7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57D11DBDCE0400E7FB7A /* MapViewController.swift */; };
 		512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57D21DBDCE0400E7FB7A /* VCMapView.swift */; };
 		514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C8E1DDABD1B00505683 /* TableViewCell.swift */; };
 		514A9C921DDABD1B00505683 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C8F1DDABD1B00505683 /* TableViewController.swift */; };
 		514A9C931DDABD1B00505683 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C901DDABD1B00505683 /* DetailViewController.swift */; };
+		5183A6AA1DDC12DE00AC13EB /* location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5183A6A91DDC12DE00AC13EB /* location.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +59,14 @@
 		512A57BC1DBDC06C00E7FB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512A57C91DBDC8B100E7FB7A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		512A57CB1DBDCD9B00E7FB7A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		512A57CD1DBDCDBA00E7FB7A /* Food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Food.json; sourceTree = "<group>"; };
-		512A57CF1DBDCDDE00E7FB7A /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		512A57CD1DBDCDBA00E7FB7A /* Location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Location.json; sourceTree = "<group>"; };
+		512A57CF1DBDCDDE00E7FB7A /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		512A57D11DBDCE0400E7FB7A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		512A57D21DBDCE0400E7FB7A /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		514A9C8E1DDABD1B00505683 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		514A9C8F1DDABD1B00505683 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		514A9C901DDABD1B00505683 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5183A6A91DDC12DE00AC13EB /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = location.gpx; path = ../location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				512A57A11DBDC06B00E7FB7A /* Assets.xcassets */,
 				512A57A31DBDC06B00E7FB7A /* LaunchScreen.storyboard */,
 				512A57A61DBDC06B00E7FB7A /* Info.plist */,
+				5183A6A91DDC12DE00AC13EB /* location.gpx */,
 			);
 			path = "Safe Reach";
 			sourceTree = "<group>";
@@ -194,8 +197,8 @@
 			children = (
 				512A57D11DBDCE0400E7FB7A /* MapViewController.swift */,
 				512A57D21DBDCE0400E7FB7A /* VCMapView.swift */,
-				512A57CF1DBDCDDE00E7FB7A /* Food.swift */,
-				512A57CD1DBDCDBA00E7FB7A /* Food.json */,
+				512A57CF1DBDCDDE00E7FB7A /* Locations.swift */,
+				512A57CD1DBDCDBA00E7FB7A /* Location.json */,
 				512A57CB1DBDCD9B00E7FB7A /* JSON.swift */,
 			);
 			name = Map;
@@ -317,7 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				512A57A51DBDC06B00E7FB7A /* LaunchScreen.storyboard in Resources */,
-				512A57CE1DBDCDBA00E7FB7A /* Food.json in Resources */,
+				512A57CE1DBDCDBA00E7FB7A /* Location.json in Resources */,
+				5183A6AA1DDC12DE00AC13EB /* location.gpx in Resources */,
 				512A57A21DBDC06B00E7FB7A /* Assets.xcassets in Resources */,
 				512A57A01DBDC06B00E7FB7A /* Main.storyboard in Resources */,
 			);
@@ -348,7 +352,7 @@
 				512A57D31DBDCE0400E7FB7A /* MapViewController.swift in Sources */,
 				512A57991DBDC06B00E7FB7A /* AppDelegate.swift in Sources */,
 				514A9C921DDABD1B00505683 /* TableViewController.swift in Sources */,
-				512A57D01DBDCDDE00E7FB7A /* Food.swift in Sources */,
+				512A57D01DBDCDDE00E7FB7A /* Locations.swift in Sources */,
 				512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */,
 				514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */,
 				514A9C931DDABD1B00505683 /* DetailViewController.swift in Sources */,

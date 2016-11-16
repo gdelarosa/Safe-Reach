@@ -13,7 +13,7 @@ extension MapViewController: MKMapViewDelegate {
    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        if let annotation = annotation as? Food {
+        if let annotation = annotation as? Locations {
             let identifier = "Pin"
             var view: MKPinAnnotationView
             if let dequeueView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView{
@@ -33,7 +33,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
        
-        let location = view.annotation as! Food
+        let location = view.annotation as! Locations 
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
         location.mapItem().openInMaps(launchOptions: launchOptions)
     }
