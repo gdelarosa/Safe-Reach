@@ -9,7 +9,8 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
+    
     // create 3 arrays
    // let imageList = ["creature1", "creature2", "creature3", "creature4", "creature5", "creature6"]
 
@@ -19,7 +20,8 @@ class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -50,8 +52,12 @@ class TableViewController: UITableViewController {
         // allocate our cell
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
         // get cell to equal list from array
+
         cell.cellTitle.text = titleList[(indexPath as NSIndexPath).row]
         cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
+        
+        
+
 
 //        let imageName = UIImage(named: imageList[(indexPath as NSIndexPath).row])
 //        cell.cellImage.image = imageName
@@ -124,15 +130,8 @@ class TableViewController: UITableViewController {
 //                dvc.sentImageData = imageView
             }
         }
-
-
-
-
-
-
-
-
-
     }
+    
+    
 
 }

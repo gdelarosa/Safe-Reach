@@ -13,7 +13,6 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
   
-    
     var locations = [Locations]()
     var locationManager = CLLocationManager()
     

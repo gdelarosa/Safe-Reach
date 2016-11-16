@@ -34,6 +34,48 @@
             </objects>
             <point key="canvasLocation" x="1516" y="-878.41079460269873"/>
         </scene>
+        <!--About-->
+        <scene sceneID="7MT-94-s1X">
+            <objects>
+                <viewController title="About" id="uab-Pq-817" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VNg-xh-aIY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dsw-pG-HHN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YG2-Uw-qqN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Safe Reach is an LGBTQ+ friendly app that provides resources in Southern California. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcT-0k-RSx">
+                                <frame key="frameInset" minX="30" minY="96" width="315" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="If you have any questions or comments please email Safe Reach at info@safereach.com " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="245-zj-hCI">
+                                <frame key="frameInset" minX="30" minY="223" width="275" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visit Safe Reach at www.safereachapp.com or github.com/safereach to contribute to the app. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="886-b5-GuL">
+                                <frame key="frameInset" minX="30" minY="376" width="275" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JWc-ZB-Ybz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zk4-lE-SZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="742.5787106446777"/>
+        </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -45,22 +87,13 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Safe Reach is an LGBTQ+ friendly app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDW-tY-fwc">
-                                <frame key="frameInset" minX="44" minY="106" width="315" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="dmR-WD-mbe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="743"/>
+            <point key="canvasLocation" x="1056.8" y="742.5787106446777"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -76,6 +109,7 @@
                         <segue destination="xwn-Da-d4t" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="UXz-Zh-yeL" kind="relationship" relationship="viewControllers" id="Krx-9G-b2f"/>
                         <segue destination="lFF-2L-ien" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="mzM-gX-hBO" kind="relationship" relationship="viewControllers" id="SbA-5X-UpX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -122,7 +156,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4c-0I-D8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841" y="743"/>
+            <point key="canvasLocation" x="1780" y="742.5787106446777"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="DQ1-Yv-jK0">
@@ -172,7 +206,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6p-ZV-Hnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.8" y="742.5787106446777"/>
+            <point key="canvasLocation" x="2564" y="742.5787106446777"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="ccv-lM-8BR">
@@ -211,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnK-k3-RA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2381.5999999999999" y="742.5787106446777"/>
+            <point key="canvasLocation" x="3320.8000000000002" y="742.5787106446777"/>
         </scene>
         <!--Filter-->
         <scene sceneID="uKV-zE-LKk">
@@ -230,11 +264,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaH-7K-Igh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-676" y="742.5787106446777"/>
+            <point key="canvasLocation" x="263.19999999999999" y="742.5787106446777"/>
+        </scene>
+        <!--About Nav-->
+        <scene sceneID="xiV-tG-5fC">
+            <objects>
+                <navigationController title="About Nav" automaticallyAdjustsScrollViewInsets="NO" id="mzM-gX-hBO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="first" id="FgK-Kq-p9f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6db-5z-s2o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uab-Pq-817" kind="relationship" relationship="rootViewController" id="pck-ff-eoj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Zm-c0-f65" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1162" y="743"/>
         </scene>
     </scenes>
     <resources>
         <image name="Fill 1" width="28" height="28"/>
+        <image name="first" width="30" height="30"/>
         <image name="icon_map" width="28" height="28"/>
         <image name="icon_ul" width="28" height="20"/>
     </resources>
