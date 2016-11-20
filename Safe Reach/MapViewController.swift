@@ -42,7 +42,7 @@ class MapViewController: UIViewController {
         
         var data: Data?
         do{
-            data = try Data(contentsOf: URL(fileURLWithPath: filename!), options: NSData.ReadingOptions(rawValue: 0))
+            data = try Data(contentsOf: URL(fileURLWithPath: filename!), options: Data.ReadingOptions(rawValue: 0))
         }catch _ {
             data = nil
         }

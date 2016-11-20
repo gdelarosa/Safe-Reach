@@ -1,21 +1,8 @@
 platform :ios, '10.0'
+ use_frameworks!
 
 target 'Safe Reach' do
-  
-    use_frameworks! 
- 
     pod 'Alamofire', '~> 4.0'
-    pod 'SwiftyJSON'
+    pod 'SwiftyJSON', '~> 3.0'
     pod 'SDWebImage', '~>3.7'
-
-  target 'Safe ReachTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Safe ReachUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

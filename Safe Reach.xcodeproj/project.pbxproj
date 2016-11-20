@@ -8,15 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		02073E24F03D423C7E2CFD7C /* Pods_Safe_Reach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E9D2024B6CAB2BBE6A8ED7 /* Pods_Safe_Reach.framework */; };
-		30DC76640D69A739CC8B84F0 /* Pods_Safe_ReachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844F8A3961D4F3E7E22EDDEF /* Pods_Safe_ReachTests.framework */; };
-		4152064550708506091209B9 /* Pods_Safe_ReachUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1442E7181F2937655374B652 /* Pods_Safe_ReachUITests.framework */; };
 		512A57991DBDC06B00E7FB7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57981DBDC06B00E7FB7A /* AppDelegate.swift */; };
 		512A579D1DBDC06B00E7FB7A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A579C1DBDC06B00E7FB7A /* SecondViewController.swift */; };
 		512A57A01DBDC06B00E7FB7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512A579E1DBDC06B00E7FB7A /* Main.storyboard */; };
 		512A57A21DBDC06B00E7FB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512A57A11DBDC06B00E7FB7A /* Assets.xcassets */; };
 		512A57A51DBDC06B00E7FB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512A57A31DBDC06B00E7FB7A /* LaunchScreen.storyboard */; };
-		512A57B01DBDC06C00E7FB7A /* Safe_ReachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57AF1DBDC06C00E7FB7A /* Safe_ReachTests.swift */; };
-		512A57BB1DBDC06C00E7FB7A /* Safe_ReachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57BA1DBDC06C00E7FB7A /* Safe_ReachUITests.swift */; };
 		512A57CA1DBDC8B100E7FB7A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512A57C91DBDC8B100E7FB7A /* MapKit.framework */; };
 		512A57CC1DBDCD9B00E7FB7A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57CB1DBDCD9B00E7FB7A /* JSON.swift */; };
 		512A57CE1DBDCDBA00E7FB7A /* Location.json in Resources */ = {isa = PBXBuildFile; fileRef = 512A57CD1DBDCDBA00E7FB7A /* Location.json */; };
@@ -59,11 +55,7 @@
 		512A57A41DBDC06B00E7FB7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		512A57A61DBDC06B00E7FB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512A57AB1DBDC06B00E7FB7A /* Safe ReachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safe ReachTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		512A57AF1DBDC06C00E7FB7A /* Safe_ReachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safe_ReachTests.swift; sourceTree = "<group>"; };
-		512A57B11DBDC06C00E7FB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512A57B61DBDC06C00E7FB7A /* Safe ReachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Safe ReachUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		512A57BA1DBDC06C00E7FB7A /* Safe_ReachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safe_ReachUITests.swift; sourceTree = "<group>"; };
-		512A57BC1DBDC06C00E7FB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512A57C91DBDC8B100E7FB7A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		512A57CB1DBDCD9B00E7FB7A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		512A57CD1DBDCDBA00E7FB7A /* Location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Location.json; sourceTree = "<group>"; };
@@ -74,11 +66,7 @@
 		514A9C8F1DDABD1B00505683 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		514A9C901DDABD1B00505683 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5183A6A91DDC12DE00AC13EB /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = location.gpx; path = ../location.gpx; sourceTree = "<group>"; };
-		6AE640F63BD26173B305A41B /* Pods-Safe ReachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe ReachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Safe ReachTests/Pods-Safe ReachTests.release.xcconfig"; sourceTree = "<group>"; };
 		844F8A3961D4F3E7E22EDDEF /* Pods_Safe_ReachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safe_ReachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96E253E62501FC121C99AB8A /* Pods-Safe ReachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe ReachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safe ReachTests/Pods-Safe ReachTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D14885370D50FAADB2D33A25 /* Pods-Safe ReachUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe ReachUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safe ReachUITests/Pods-Safe ReachUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E746521D853A68A7DA91CF75 /* Pods-Safe ReachUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe ReachUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Safe ReachUITests/Pods-Safe ReachUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30DC76640D69A739CC8B84F0 /* Pods_Safe_ReachTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4152064550708506091209B9 /* Pods_Safe_ReachUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				512A57971DBDC06B00E7FB7A /* Safe Reach */,
-				512A57AE1DBDC06C00E7FB7A /* Safe ReachTests */,
-				512A57B91DBDC06C00E7FB7A /* Safe ReachUITests */,
 				512A57961DBDC06B00E7FB7A /* Products */,
 				512A57C81DBDC8B100E7FB7A /* Frameworks */,
 				9AF5C21BA4F8089A1B7B4C61 /* Pods */,
@@ -170,24 +154,6 @@
 				5183A6A91DDC12DE00AC13EB /* location.gpx */,
 			);
 			path = "Safe Reach";
-			sourceTree = "<group>";
-		};
-		512A57AE1DBDC06C00E7FB7A /* Safe ReachTests */ = {
-			isa = PBXGroup;
-			children = (
-				512A57AF1DBDC06C00E7FB7A /* Safe_ReachTests.swift */,
-				512A57B11DBDC06C00E7FB7A /* Info.plist */,
-			);
-			path = "Safe ReachTests";
-			sourceTree = "<group>";
-		};
-		512A57B91DBDC06C00E7FB7A /* Safe ReachUITests */ = {
-			isa = PBXGroup;
-			children = (
-				512A57BA1DBDC06C00E7FB7A /* Safe_ReachUITests.swift */,
-				512A57BC1DBDC06C00E7FB7A /* Info.plist */,
-			);
-			path = "Safe ReachUITests";
 			sourceTree = "<group>";
 		};
 		512A57C81DBDC8B100E7FB7A /* Frameworks */ = {
@@ -228,10 +194,6 @@
 			children = (
 				1B26167FFF897205B43D25DB /* Pods-Safe Reach.debug.xcconfig */,
 				3D05EFB0C20B51C556448F58 /* Pods-Safe Reach.release.xcconfig */,
-				96E253E62501FC121C99AB8A /* Pods-Safe ReachTests.debug.xcconfig */,
-				6AE640F63BD26173B305A41B /* Pods-Safe ReachTests.release.xcconfig */,
-				D14885370D50FAADB2D33A25 /* Pods-Safe ReachUITests.debug.xcconfig */,
-				E746521D853A68A7DA91CF75 /* Pods-Safe ReachUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -313,6 +275,7 @@
 					512A57941DBDC06B00E7FB7A = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6GUQ7XNWR;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -323,12 +286,14 @@
 					512A57AA1DBDC06B00E7FB7A = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6GUQ7XNWR;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 512A57941DBDC06B00E7FB7A;
 					};
 					512A57B51DBDC06C00E7FB7A = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A6GUQ7XNWR;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 512A57941DBDC06B00E7FB7A;
 					};
@@ -527,7 +492,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512A57B01DBDC06C00E7FB7A /* Safe_ReachTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512A57BB1DBDC06C00E7FB7A /* Safe_ReachUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,7 +660,6 @@
 		};
 		512A57C31DBDC06C00E7FB7A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96E253E62501FC121C99AB8A /* Pods-Safe ReachTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -713,7 +675,6 @@
 		};
 		512A57C41DBDC06C00E7FB7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AE640F63BD26173B305A41B /* Pods-Safe ReachTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -729,7 +690,6 @@
 		};
 		512A57C61DBDC06C00E7FB7A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14885370D50FAADB2D33A25 /* Pods-Safe ReachUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = A6GUQ7XNWR;
@@ -744,7 +704,6 @@
 		};
 		512A57C71DBDC06C00E7FB7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E746521D853A68A7DA91CF75 /* Pods-Safe ReachUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = A6GUQ7XNWR;
