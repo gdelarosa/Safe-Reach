@@ -332,7 +332,7 @@
         <scene sceneID="xiV-tG-5fC">
             <objects>
                 <navigationController title="About Nav" automaticallyAdjustsScrollViewInsets="NO" id="mzM-gX-hBO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="first" id="FgK-Kq-p9f"/>
+                    <tabBarItem key="tabBarItem" title="About" selectedImage="first" id="FgK-Kq-p9f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6db-5z-s2o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
