@@ -112,6 +112,8 @@
 		5115845D1DC2E01F005572BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				512A579E1DBDC06B00E7FB7A /* Main.storyboard */,
+				512A57A31DBDC06B00E7FB7A /* LaunchScreen.storyboard */,
 				517781CF1DE17C18005F7D89 /* Custom Cell */,
 				51F7A4FB1DDAC76C007EB571 /* Map */,
 				514A9C8D1DDABD0300505683 /* TableView */,
@@ -165,9 +167,7 @@
 				5115845E1DC2E027005572BF /* Model */,
 				5115845D1DC2E01F005572BF /* View */,
 				512A57981DBDC06B00E7FB7A /* AppDelegate.swift */,
-				512A579E1DBDC06B00E7FB7A /* Main.storyboard */,
 				512A57A11DBDC06B00E7FB7A /* Assets.xcassets */,
-				512A57A31DBDC06B00E7FB7A /* LaunchScreen.storyboard */,
 				512A57A61DBDC06B00E7FB7A /* Info.plist */,
 				5183A6A91DDC12DE00AC13EB /* location.gpx */,
 				517781DB1DE17C79005F7D89 /* BridgingHeader.h */,

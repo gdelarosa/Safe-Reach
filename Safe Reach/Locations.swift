@@ -55,10 +55,16 @@ class Locations: NSObject, MKAnnotation {
     
     func pinColor() -> UIColor? {
         switch discipline {
-        case "Housing", "Shelter" :
+        case "Housing", "Social" :
             return UIColor.blue
-        case "Food", "Pantry" :
-            return UIColor.blue
+        case "Health" :
+            return UIColor.green
+        case "Education" :
+            return UIColor.red
+        case "Spiritual" :
+            return UIColor.yellow
+        case "Community" :
+            return UIColor.orange
         default :
             return UIColor.blue
         }
