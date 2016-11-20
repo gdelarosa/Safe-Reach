@@ -12,36 +12,49 @@ import MapKit
 class MapViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var search: UISearchBar!
-  
+
     var locations = [Locations]()
     var locationManager = CLLocationManager()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        search.delegate = self
-        search.returnKeyType = UIReturnKeyType.done
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
         
         mapView.delegate = self
-        let initialLocation = CLLocation(latitude: 34.0522, longitude: -118.2437) // LA 
-        centerMapOnLocation(initialLocation)
-        loadInitialDtata()
+        //let initialLocation = CLLocation(latitude: 34.0522, longitude: -118.2437) // LA
+        //centerMapOnLocation(initialLocation)
+        loadInitialData()
         mapView.addAnnotations(locations)
+        
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        checkLocationAuthorizationStatus()
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        //checkLocationAuthorizationStatus()
+//    }
     
-    let regionRadius: CLLocationDistance = 100000
-    func centerMapOnLocation(_ location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
     
-    func loadInitialDtata(){
+    
+    
+//    let regionRadius: CLLocationDistance = 10000
+//    
+//    func centerMapOnLocation(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        if let location = locations.first {
+//            let span = MKCoordinateSpanMake(0.05, 0.05)
+//            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+//            mapView.setRegion(region, animated: true)
+//        }
+////        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius * 2.0, regionRadius * 2.0)
+////        mapView.setRegion(coordinateRegion, animated: true)
+//    }
+    
+    func loadInitialData(){
         let filename = Bundle.main.path(forResource: "Location", ofType: "json")
         
         var data: Data?
@@ -71,15 +84,48 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         
     }
     
-    func checkLocationAuthorizationStatus(){
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-        }else {
-            locationManager.requestWhenInUseAuthorization()
+//    func checkLocationAuthorizationStatus(){
+//        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+//            mapView.showsUserLocation = true
+//        }else {
+//            locationManager.requestWhenInUseAuthorization()
+//        }
+//    }
+    // TESTING, zooms to users location.
+//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        if let location = locations.first {
+//            let span = MKCoordinateSpanMake(0.05, 0.05)
+//            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+//            mapView.setRegion(region, animated: true)
+//        }
+//    }
+    
+}
+
+extension MapViewController : CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: \(error.localizedDescription)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            locationManager.requestLocation()
         }
     }
     
-   
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if locations.first != nil {
+            print("location:: (location)")
+        }
+        if let location = locations.first {
+            let span = MKCoordinateSpanMake(0.05, 0.05)
+            let region = MKCoordinateRegion(center: location.coordinate, span: span)
+            mapView.setRegion(region, animated: true)
+        }
+        
+    }
     
 }
 

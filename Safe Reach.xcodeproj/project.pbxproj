@@ -213,9 +213,17 @@
 			name = API;
 			sourceTree = "<group>";
 		};
+		51D9996B1DE1FDB6005F8448 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SearchBar;
+			sourceTree = "<group>";
+		};
 		51F7A4FB1DDAC76C007EB571 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				51D9996B1DE1FDB6005F8448 /* SearchBar */,
 				512A57D11DBDCE0400E7FB7A /* MapViewController.swift */,
 				512A57D21DBDCE0400E7FB7A /* VCMapView.swift */,
 				512A57CF1DBDCDDE00E7FB7A /* Locations.swift */,
