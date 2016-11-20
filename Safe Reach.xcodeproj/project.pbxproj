@@ -29,6 +29,7 @@
 		517781D81DE17C69005F7D89 /* OpenEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517781D71DE17C69005F7D89 /* OpenEventsTableViewController.swift */; };
 		517781DA1DE17C71005F7D89 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517781D91DE17C71005F7D89 /* Alert.swift */; };
 		5183A6AA1DDC12DE00AC13EB /* location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5183A6A91DDC12DE00AC13EB /* location.gpx */; };
+		51D9996F1DE24F7F005F8448 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9996E1DE24F7F005F8448 /* LocationSearchTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		517781D91DE17C71005F7D89 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		517781DB1DE17C79005F7D89 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		5183A6A91DDC12DE00AC13EB /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = location.gpx; path = ../location.gpx; sourceTree = "<group>"; };
+		51D9996E1DE24F7F005F8448 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		844F8A3961D4F3E7E22EDDEF /* Pods_Safe_ReachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safe_ReachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 		51D9996B1DE1FDB6005F8448 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				51D9996E1DE24F7F005F8448 /* LocationSearchTable.swift */,
 			);
 			name = SearchBar;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				512A57D31DBDCE0400E7FB7A /* MapViewController.swift in Sources */,
 				512A57991DBDC06B00E7FB7A /* AppDelegate.swift in Sources */,
 				514A9C921DDABD1B00505683 /* TableViewController.swift in Sources */,
+				51D9996F1DE24F7F005F8448 /* LocationSearchTable.swift in Sources */,
 				512A57D01DBDCDDE00E7FB7A /* Locations.swift in Sources */,
 				512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */,
 				514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */,

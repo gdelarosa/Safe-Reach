@@ -31,6 +31,7 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         loadInitialData()
         mapView.addAnnotations(locations)
         
+        
 
     }
     
@@ -38,9 +39,6 @@ class MapViewController: UIViewController, UISearchBarDelegate {
 //        super.viewDidAppear(animated)
 //        //checkLocationAuthorizationStatus()
 //    }
-    
-    
-    
     
 //    let regionRadius: CLLocationDistance = 10000
 //    
