@@ -9,15 +9,19 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var search: UISearchBar!
   
     var locations = [Locations]()
     var locationManager = CLLocationManager()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        search.delegate = self
+        search.returnKeyType = UIReturnKeyType.done
         
         mapView.delegate = self
         let initialLocation = CLLocation(latitude: 34.0522, longitude: -118.2437) // LA 
@@ -74,6 +78,8 @@ class MapViewController: UIViewController {
             locationManager.requestWhenInUseAuthorization()
         }
     }
+    
+   
     
 }
 
