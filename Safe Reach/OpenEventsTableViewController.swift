@@ -32,6 +32,14 @@ class OpenEventsTableViewController: UITableViewController, AlertPresenter {
         self.tableView.alpha = 0.0
         self.tableView.register(UINib(nibName: "OpenEventTableViewCell", bundle: nil), forCellReuseIdentifier: OpenEventTableViewCell.reuseIdentifier)
         locationManager.requestLocation()
+        
+        // Navigation Controller UI
+        let imageView = UIImageView(image: UIImage(named: "Triangle"))
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 30))
+        imageView.frame = titleView.bounds
+        titleView.addSubview(imageView)
+        self.navigationItem.titleView = titleView
     }
 
     // MARK: - Table view data source
@@ -72,7 +80,7 @@ class OpenEventsTableViewController: UITableViewController, AlertPresenter {
                     
                     self.tableView.reloadData()
                     UIView.animate(withDuration: 0.35, animations: { self.tableView.alpha = 1.0 })
-                    self.title = "\(self.openEvents?.count ?? 0) nearby events"
+                    //self.title = "\(self.openEvents?.count ?? 0) nearby events"
                 }
             },
             failure: { _ in self.presentAlert(alertOptions: AlertOptions(message: "Error retrieving events."))}

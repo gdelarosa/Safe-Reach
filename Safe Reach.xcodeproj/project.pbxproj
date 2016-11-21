@@ -30,6 +30,7 @@
 		517781DA1DE17C71005F7D89 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517781D91DE17C71005F7D89 /* Alert.swift */; };
 		5183A6AA1DDC12DE00AC13EB /* location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5183A6A91DDC12DE00AC13EB /* location.gpx */; };
 		51D9996F1DE24F7F005F8448 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9996E1DE24F7F005F8448 /* LocationSearchTable.swift */; };
+		51D999741DE2822F005F8448 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D999731DE2822F005F8448 /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		517781DB1DE17C79005F7D89 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		5183A6A91DDC12DE00AC13EB /* location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = location.gpx; path = ../location.gpx; sourceTree = "<group>"; };
 		51D9996E1DE24F7F005F8448 /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		51D999731DE2822F005F8448 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		844F8A3961D4F3E7E22EDDEF /* Pods_Safe_ReachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Safe_ReachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,30 +118,19 @@
 			children = (
 				512A579E1DBDC06B00E7FB7A /* Main.storyboard */,
 				512A57A31DBDC06B00E7FB7A /* LaunchScreen.storyboard */,
-				517781CF1DE17C18005F7D89 /* Custom Cell */,
-				51F7A4FB1DDAC76C007EB571 /* Map */,
-				514A9C8D1DDABD0300505683 /* TableView */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		5115845E1DC2E027005572BF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				517781D41DE17C43005F7D89 /* API */,
-				517781CB1DE17C02005F7D89 /* OpenEvent.swift */,
-				517781CC1DE17C02005F7D89 /* Address.swift */,
-				517781D91DE17C71005F7D89 /* Alert.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		5115845F1DC2E030005572BF /* Controller */ = {
+		5115845E1DC2E027005572BF /* Social */ = {
 			isa = PBXGroup;
 			children = (
 				517781D71DE17C69005F7D89 /* OpenEventsTableViewController.swift */,
+				517781CF1DE17C18005F7D89 /* Custom Cell */,
+				51D999701DE2814C005F8448 /* JSON */,
+				517781D41DE17C43005F7D89 /* API */,
 			);
-			name = Controller;
+			name = Social;
 			sourceTree = "<group>";
 		};
 		512A578C1DBDC06B00E7FB7A = {
@@ -165,14 +156,12 @@
 		512A57971DBDC06B00E7FB7A /* Safe Reach */ = {
 			isa = PBXGroup;
 			children = (
-				5115845F1DC2E030005572BF /* Controller */,
-				5115845E1DC2E027005572BF /* Model */,
+				51F7A4FB1DDAC76C007EB571 /* Map */,
+				514A9C8D1DDABD0300505683 /* Categories */,
+				5115845E1DC2E027005572BF /* Social */,
+				51D999721DE2820C005F8448 /* About */,
 				5115845D1DC2E01F005572BF /* View */,
-				512A57981DBDC06B00E7FB7A /* AppDelegate.swift */,
-				512A57A11DBDC06B00E7FB7A /* Assets.xcassets */,
-				512A57A61DBDC06B00E7FB7A /* Info.plist */,
-				5183A6A91DDC12DE00AC13EB /* location.gpx */,
-				517781DB1DE17C79005F7D89 /* BridgingHeader.h */,
+				51D999711DE281DA005F8448 /* Additional */,
 			);
 			path = "Safe Reach";
 			sourceTree = "<group>";
@@ -188,14 +177,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		514A9C8D1DDABD0300505683 /* TableView */ = {
+		514A9C8D1DDABD0300505683 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				514A9C8E1DDABD1B00505683 /* TableViewCell.swift */,
 				514A9C8F1DDABD1B00505683 /* TableViewController.swift */,
+				514A9C8E1DDABD1B00505683 /* TableViewCell.swift */,
 				514A9C901DDABD1B00505683 /* DetailViewController.swift */,
 			);
-			name = TableView;
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		517781CF1DE17C18005F7D89 /* Custom Cell */ = {
@@ -221,6 +210,36 @@
 				51D9996E1DE24F7F005F8448 /* LocationSearchTable.swift */,
 			);
 			name = SearchBar;
+			sourceTree = "<group>";
+		};
+		51D999701DE2814C005F8448 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				517781CB1DE17C02005F7D89 /* OpenEvent.swift */,
+				517781CC1DE17C02005F7D89 /* Address.swift */,
+				517781D91DE17C71005F7D89 /* Alert.swift */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		51D999711DE281DA005F8448 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				512A57981DBDC06B00E7FB7A /* AppDelegate.swift */,
+				512A57A11DBDC06B00E7FB7A /* Assets.xcassets */,
+				512A57A61DBDC06B00E7FB7A /* Info.plist */,
+				5183A6A91DDC12DE00AC13EB /* location.gpx */,
+				517781DB1DE17C79005F7D89 /* BridgingHeader.h */,
+			);
+			name = Additional;
+			sourceTree = "<group>";
+		};
+		51D999721DE2820C005F8448 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				51D999731DE2822F005F8448 /* AboutVC.swift */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		51F7A4FB1DDAC76C007EB571 /* Map */ = {
@@ -536,6 +555,7 @@
 				514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */,
 				514A9C931DDABD1B00505683 /* DetailViewController.swift in Sources */,
 				517781D81DE17C69005F7D89 /* OpenEventsTableViewController.swift in Sources */,
+				51D999741DE2822F005F8448 /* AboutVC.swift in Sources */,
 				517781D61DE17C4E005F7D89 /* APIManager.swift in Sources */,
 				517781CE1DE17C02005F7D89 /* Address.swift in Sources */,
 				512A57CC1DBDCD9B00E7FB7A /* JSON.swift in Sources */,

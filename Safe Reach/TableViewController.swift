@@ -14,13 +14,20 @@ class TableViewController: UITableViewController {
     // create 3 arrays
    // let imageList = ["creature1", "creature2", "creature3", "creature4", "creature5", "creature6"]
 
-    let titleList = ["LGBT Center", "LGBTQ LA", "Barry", "Brandon", "Boris", "Blake"]
-    let descriptionList = ["Health Services", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
+    let titleList = ["Community", "Health", "Social/Housing", "Education", "Spiritual", "Business"]
+   // let descriptionList = ["Health Services", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Navigation Controller UI
+        let imageView = UIImageView(image: UIImage(named: "Triangle"))
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 30))
+        imageView.frame = titleView.bounds
+        titleView.addSubview(imageView)
+        self.navigationItem.titleView = titleView
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -54,7 +61,7 @@ class TableViewController: UITableViewController {
         // get cell to equal list from array
 
         cell.cellTitle.text = titleList[(indexPath as NSIndexPath).row]
-        cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
+        //cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
         
         
 
@@ -120,7 +127,7 @@ class TableViewController: UITableViewController {
                 dvc.sentTitleData = title
 
                 // convert to string to place in our sent data
-                let description = descriptionList[(indexPath as NSIndexPath).row] as String
+               // let description = descriptionList[(indexPath as NSIndexPath).row] as String
                 // now we reference objects in the dvc
                 dvc.sentDescriptionData = description
 
