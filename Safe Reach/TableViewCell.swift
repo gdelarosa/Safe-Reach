@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-   // @IBOutlet var cellImage: UIImageView!
+    @IBOutlet var cellImage: UIImageView!
     @IBOutlet var cellTitle: UILabel!
     @IBOutlet var cellDescription: UILabel!
 

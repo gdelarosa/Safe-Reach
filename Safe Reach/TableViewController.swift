@@ -10,18 +10,13 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    
-    // create 3 arrays
-   // let imageList = ["creature1", "creature2", "creature3", "creature4", "creature5", "creature6"]
-
-    let titleList = ["Community", "Health", "Social/Housing", "Education", "Spiritual", "Business"]
-   // let descriptionList = ["Health Services", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
-
+    let imageList = ["home", "medical", "user-group", "graduation", "web"]
+    let titleList = ["Community", "Health", "Social/Housing", "Education", "Spiritual"]
+    let descriptionList = ["Centers, Business'", "HIV/AIDS", "Services", "Information", "", "Accepting places of practice"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Navigation Controller UI
         let imageView = UIImageView(image: UIImage(named: "Triangle"))
         imageView.contentMode = UIViewContentMode.scaleAspectFit
         let titleView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 30))
@@ -29,89 +24,30 @@ class TableViewController: UITableViewController {
         titleView.addSubview(imageView)
         self.navigationItem.titleView = titleView
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
+    // MARK: - Tableview
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return titleList.count
     }
 
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        // allocate our cell
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        // get cell to equal list from array
-
+       
         cell.cellTitle.text = titleList[(indexPath as NSIndexPath).row]
-        //cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
+        cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
         
-        
-
-
-//        let imageName = UIImage(named: imageList[(indexPath as NSIndexPath).row])
-//        cell.cellImage.image = imageName
+        let imageName = UIImage(named: imageList[(indexPath as NSIndexPath).row])
+        cell.cellImage.image = imageName
 
         return cell
     }
 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         // store information into string before push to detail view
@@ -127,7 +63,7 @@ class TableViewController: UITableViewController {
                 dvc.sentTitleData = title
 
                 // convert to string to place in our sent data
-               // let description = descriptionList[(indexPath as NSIndexPath).row] as String
+                let description = descriptionList[(indexPath as NSIndexPath).row] as String
                 // now we reference objects in the dvc
                 dvc.sentDescriptionData = description
 

@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
        // detailImageView.image = UIImage(named: sentImageData)
 
 
-        if detailTitle.text == "LGBT Center"
+        if detailTitle.text == "Community"
         {
             address.text = "12345 Los Angeles Blvd."
         }
