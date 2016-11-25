@@ -27,9 +27,12 @@ class DetailViewController: UIViewController {
     var sentDescriptionData:String!
   //  var sentImageData:String!
 
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Testing Data from JSON
+       
 
         // place the 3 strings above in our 3 objects
         detailTitle.text = sentTitleData
@@ -87,15 +90,5 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

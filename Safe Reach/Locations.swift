@@ -59,12 +59,10 @@ class Locations: NSObject, MKAnnotation {
             return UIColor.blue
         case "Health" :
             return UIColor.green
-        case "Education" :
-            return UIColor.red
         case "Spiritual" :
-            return UIColor.yellow
+            return UIColor.purple
         case "Community" :
-            return UIColor.orange
+            return UIColor.red
         default :
             return UIColor.blue
         }

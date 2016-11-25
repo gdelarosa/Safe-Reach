@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     
     let imageList = ["home", "medical", "user-group", "graduation", "web"]
     let titleList = ["Community", "Health", "Social/Housing", "Education", "Spiritual"]
-    let descriptionList = ["Centers, Business'", "HIV/AIDS", "Services", "Information", "", "Accepting places of practice"]
+    let descriptionList = ["Centers and Business'", "Medical, Mental, Addiction Recovery, HIV/AIDS", "Youth, Transgender, Legal, Senior, Support", "Information", "Affirming churches"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

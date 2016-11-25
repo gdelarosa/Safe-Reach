@@ -34,12 +34,10 @@ class MapViewController: UIViewController, UISearchBarDelegate {
         locationManager.requestLocation()
         
         mapView.delegate = self
-        //let initialLocation = CLLocation(latitude: 34.0522, longitude: -118.2437) // LA
-        //centerMapOnLocation(initialLocation)
         loadInitialData()
         mapView.addAnnotations(locations)
         
-        //Testing 
+        //Testing Search Bar
         let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
         resultSearchController = UISearchController(searchResultsController: locationSearchTable)
         //resultSearchController.searchResultsUpdater = locationSearchTable
