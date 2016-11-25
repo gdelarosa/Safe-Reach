@@ -17,6 +17,7 @@ protocol HandleMapSearch: class {
 class MapViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+   
 
     var locations = [Locations]()
     var locationManager = CLLocationManager()
@@ -51,10 +52,10 @@ class MapViewController: UIViewController, UISearchBarDelegate {
        // locationSearchTable.mapView = mapView
         //locationSearchTable.handleMapSearchDelegate = self
         
-        
+
 
     }
-    
+        
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(animated)
 //        //checkLocationAuthorizationStatus()
@@ -138,7 +139,7 @@ extension MapViewController : CLLocationManagerDelegate {
             print("location:: (location)")
         }
         if let location = locations.first {
-            let span = MKCoordinateSpanMake(0.05, 0.05)
+            let span = MKCoordinateSpanMake(0.10, 0.10)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }
