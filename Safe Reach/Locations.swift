@@ -13,7 +13,7 @@ import Contacts
 class Locations: NSObject, MKAnnotation {
     let title: String?
     let locationName: String
-    let discipline: String
+    let discipline: String 
     let coordinate: CLLocationCoordinate2D
     
     init(title: String,locationName: String,discipline: String,coordinate: CLLocationCoordinate2D) {
