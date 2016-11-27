@@ -64,7 +64,7 @@ class Locations: NSObject, MKAnnotation {
         case "Community" :
             return UIColor.red
         default :
-            return UIColor.blue
+            return UIColor.purple
         }
     }
 }

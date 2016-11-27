@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class AboutVC: UIViewController {
+class AboutVC: UIViewController, MFMailComposeViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,36 @@ class AboutVC: UIViewController {
         self.navigationItem.titleView = titleView
     }
 
+    @IBAction func website(_ sender: AnyObject) {
+        if let url = URL(string: "http://www.safereachapp.com/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
  
+    @IBAction func email(_ sender: AnyObject) {
+        let toRecipients = ["safereachapp@gmail.com"]
+        let mc: MFMailComposeViewController = MFMailComposeViewController()
+        mc.mailComposeDelegate = self
+        mc.setToRecipients(toRecipients)
+        mc.setSubject("Safe Reach App Inquiry")
+        self.present(mc, animated: true, completion: nil)
+
+    }
+ 
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        switch result.rawValue {
+        case MFMailComposeResult.cancelled.rawValue:
+            print("Cancelled")
+        case MFMailComposeResult.failed.rawValue:
+            print("Failed")
+        case MFMailComposeResult.saved.rawValue:
+            print("Saved")
+        case MFMailComposeResult.sent.rawValue:
+            print("Sent")
+        default:
+            break
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }
