@@ -342,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="2541.5999999999999" y="742.5787106446777"/>
         </scene>
-        <!--Community List-->
+        <!--CommunityVC-->
         <scene sceneID="Rr1-cA-u1Z">
             <objects>
-                <tableViewController title="Community List" hidesBottomBarWhenPushed="YES" id="vWB-Un-I6n" customClass="CommunityVC" customModule="Safe_Reach" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="vWB-Un-I6n" customClass="CommunityVC" customModule="Safe_Reach" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="Iea-sA-7Ht">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,6 +358,10 @@
                                     <frame key="frameInset" width="342" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-zB-9Vy">
+                                            <frame key="frameInset" minX="24" minY="3" width="66" height="57"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEY-nd-SPp">
                                             <frame key="frameInset" minX="111" minY="8" width="256" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -372,17 +376,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-zB-9Vy">
-                                            <frame key="frameInset" minX="24" minY="3" width="66" height="57"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellDescription" destination="I9O-BA-xF7" id="RgG-hM-vZq"/>
                                     <outlet property="cellImage" destination="2eE-zB-9Vy" id="1yU-xZ-7D5"/>
                                     <outlet property="cellTitle" destination="JEY-nd-SPp" id="tFC-SR-A6G"/>
-                                    <segue destination="5Xu-xf-cJ0" kind="showDetail" identifier="DetailView" trigger="accessoryAction" action="showViewController:sender:" id="oQh-Xw-Vng"/>
+                                    <segue destination="5Xu-xf-cJ0" kind="show" identifier="DetailView" id="pFx-fS-AY9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -400,7 +400,7 @@
         <!--Community DetailVC-->
         <scene sceneID="ccv-lM-8BR">
             <objects>
-                <viewController storyboardIdentifier="CommunityDetail" id="5Xu-xf-cJ0" customClass="CommunityDetailVC" customModule="Safe_Reach" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="5Xu-xf-cJ0" customClass="CommunityDetailVC" customModule="Safe_Reach" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AIQ-Wp-Rs3"/>
                         <viewControllerLayoutGuide type="bottom" id="64s-dV-8Nh"/>
@@ -410,16 +410,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oh2-4y-hAi">
-                                <frame key="frameInset" minX="22" minY="112" width="331" height="171"/>
+                                <frame key="frameInset" minX="22" minY="82" width="331" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch6-5d-0Rb">
-                                <frame key="frameInset" minX="16" minY="323" width="337" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-ZO-E5o">
                                 <frame key="frameInset" minX="16" minY="361" width="337" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -455,6 +448,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch6-5d-0Rb">
+                                <frame key="frameInset" minX="16" minY="332" width="337" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -470,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fnK-k3-RA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4272.8000000000002" y="742.5787106446777"/>
+            <point key="canvasLocation" x="4128.8000000000002" y="742.5787106446777"/>
         </scene>
         <!--Social-->
         <scene sceneID="uKV-zE-LKk">
@@ -523,7 +523,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGn-ha-zCL" id="Lku-I2-ayu">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

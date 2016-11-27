@@ -11,9 +11,7 @@ import UIKit
 class CommunityVC: UITableViewController {
 
     let imageList = ["home", "medical", "homeRed", "medicalGreen", "Triangle", "web"]
-    
-    let titleList = ["LGBT Center Los Angeles", "LGBT Center Palm Springs", "LGBT Center San Diego", "LGBT Center Riverside", "Youth Center", "Center for Youth"]
-    
+    let titleList = ["Bob", "LGBT Center Palm Springs", "LGBT Center San Diego", "LGBT Center Riverside", "Youth Center", "Center for Youth"]
     let descriptionList = ["Big Ears", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
     
     
@@ -38,18 +36,16 @@ class CommunityVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-        
         cell.cellTitle.text = titleList[(indexPath as NSIndexPath).row]
         cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
-        
         let imageName = UIImage(named: imageList[(indexPath as NSIndexPath).row])
         cell.cellImage.image = imageName
         
         return cell
     }
     
-    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // store information into string before push to detail view
@@ -61,21 +57,20 @@ class CommunityVC: UITableViewController {
             {
                 // convert to string to place in our sent data
                 let title = titleList[(indexPath as NSIndexPath).row] as String
-                //reference objects in the dvc
+                // now we reference objects in the dvc
                 dvc.sentTitleData = title
                 
                 // convert to string to place in our sent data
                 let description = descriptionList[(indexPath as NSIndexPath).row] as String
+                // now we reference objects in the dvc
                 dvc.sentDescriptionData = description
                 
                 // convert to string to place in our sent data
                 let imageView = imageList[(indexPath as NSIndexPath).row] as String
                 // now we reference objects in the dvc
                 dvc.sentImageData = imageView
-                
             }
         }
     }
- 
 
 }

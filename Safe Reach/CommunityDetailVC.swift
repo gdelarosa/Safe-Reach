@@ -23,17 +23,14 @@ class CommunityDetailVC: UIViewController {
     var sentDescriptionData:String!
     var sentImageData:String!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         detailTitle.text = sentTitleData
         detailDescription.text = sentDescriptionData
-        
         detailImageView.image = UIImage(named: sentImageData)
         
-        
-        if detailTitle.text == "LGBT Center Los Angeles"
+        if detailTitle.text == "Bob"
         {
             address.text = "2333 Los Angeles CA 92636"
             phoneNumber.text = "310-555-5555"
@@ -55,10 +52,6 @@ class CommunityDetailVC: UIViewController {
             hours.text = "M-F 8am - 12pm"
         }
 
-
-        
-        
-        
     }
 
 }
