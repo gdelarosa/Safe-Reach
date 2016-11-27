@@ -1,19 +1,22 @@
 //
-//  TableViewController.swift
-//  TableViewSwift
+//  CommunityVC.swift
+//  Safe Reach
 //
-//  Created by Gina De La Rosa on 11/14/16.
+//  Created by Gina De La Rosa on 11/27/16.
 //  Copyright © 2016 Gina De La Rosa. All rights reserved.
 //
 
 import UIKit
 
-class TableViewController: UITableViewController {
-    
-    let imageList = ["homeRed", "medicalGreen", "user-groupBlue","webPurple"]
-    let titleList = ["Community", "Health", "Social/Housing", "Spiritual"]
-    let descriptionList = ["Community Centers", "Medical, Mental, Addiction Recovery, HIV/AIDS", "Youth, Transgender, Legal, Senior, Support","Affirming churches"]
+class CommunityVC: UITableViewController {
 
+    let imageList = ["home", "medical", "homeRed", "medicalGreen", "Triangle", "web"]
+    
+    let titleList = ["LGBT Center Los Angeles", "LGBT Center Palm Springs", "LGBT Center San Diego", "LGBT Center Riverside", "Youth Center", "Center for Youth"]
+    
+    let descriptionList = ["Big Ears", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,58 +26,56 @@ class TableViewController: UITableViewController {
         imageView.frame = titleView.bounds
         titleView.addSubview(imageView)
         self.navigationItem.titleView = titleView
-        
     }
-
+  
     // MARK: - Tableview
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleList.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
-       
+        
         cell.cellTitle.text = titleList[(indexPath as NSIndexPath).row]
         cell.cellDescription.text = descriptionList[(indexPath as NSIndexPath).row]
         
         let imageName = UIImage(named: imageList[(indexPath as NSIndexPath).row])
         cell.cellImage.image = imageName
-
+        
         return cell
     }
-
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        
         // store information into string before push to detail view
         if (segue.identifier == "DetailView")
         {
             // reference detailVC in this vc
-            let dvc = segue.destination as! DetailViewController
+            let dvc = segue.destination as! CommunityDetailVC
             if let indexPath = self.tableView.indexPathForSelectedRow
             {
                 // convert to string to place in our sent data
                 let title = titleList[(indexPath as NSIndexPath).row] as String
-                // now we reference objects in the dvc
+                //reference objects in the dvc
                 dvc.sentTitleData = title
-
+                
                 // convert to string to place in our sent data
                 let description = descriptionList[(indexPath as NSIndexPath).row] as String
-                // now we reference objects in the dvc
                 dvc.sentDescriptionData = description
-
+                
                 // convert to string to place in our sent data
-//                let imageView = imageList[(indexPath as NSIndexPath).row] as String
-//                // now we reference objects in the dvc
-//                dvc.sentImageData = imageView
+                let imageView = imageList[(indexPath as NSIndexPath).row] as String
+                // now we reference objects in the dvc
+                dvc.sentImageData = imageView
+                
             }
         }
     }
-    
-    
+ 
 
 }
