@@ -10,9 +10,9 @@ import UIKit
 
 class CommunityVC: UITableViewController {
 
-    let imageList = ["home", "medical", "homeRed", "medicalGreen", "Triangle", "web"]
-    let titleList = ["Bob", "LGBT Center Palm Springs", "LGBT Center San Diego", "LGBT Center Riverside", "Youth Center", "Center for Youth"]
-    let descriptionList = ["Big Ears", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
+    let imageList = ["McDonaldLA", "medical", "homeRed", "medicalGreen", "Triangle", "web"]
+    let titleList = ["LGBT Center Los Angeles", "LGBT Center Palm Springs", "LGBT Center San Diego", "LGBT Center Riverside", "Youth Center", "Center for Youth"]
+    let descriptionList = ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
     
     
     override func viewDidLoad() {

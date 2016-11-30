@@ -30,12 +30,12 @@ class CommunityDetailVC: UIViewController {
         detailDescription.text = sentDescriptionData
         detailImageView.image = UIImage(named: sentImageData)
         
-        if detailTitle.text == "Bob"
+        if detailTitle.text == "LGBT Center Los Angeles"
         {
-            address.text = "2333 Los Angeles CA 92636"
-            phoneNumber.text = "310-555-5555"
-            website.text = "www.lgbtcenter.org"
-            hours.text = "M-F 8am - 12pm"
+            address.text = "1625 N. Schrader Blvd. Los Angeles, CA 90028"
+            phoneNumber.text = "323-993-7400"
+            website.text = "https://lalgbtcenter.org/"
+            hours.text = "M-F 8am-8pm"
         }
         if detailTitle.text == "LGBT Center Long Beach"
         {
