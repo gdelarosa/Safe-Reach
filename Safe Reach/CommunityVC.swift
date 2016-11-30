@@ -10,9 +10,31 @@ import UIKit
 
 class CommunityVC: UITableViewController {
 
-    let imageList = ["McDonaldLA", "medical", "homeRed", "medicalGreen", "Triangle", "web"]
-    let titleList = ["LGBT Center Los Angeles", "LGBT Center Palm Springs", "LGBT Center San Diego", "LGBT Center Riverside", "Youth Center", "Center for Youth"]
-    let descriptionList = ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "Fat Nose", "Small Toes", "Smelly Farts", "Loud Scream", "Slimy Boogers"]
+    let imageList = ["McDonaldLA",
+                     "LGBTCenterWeHo",
+                     "LaChamber",
+                     "OutReachLanc",
+                     "LgbtLongBeach",
+                     "southbayLGBTcenter",
+                     "SfvCenter",
+                     "ServiceCenterOC"]
+    
+    let titleList = ["LGBT Center Los Angeles",
+                     "LGBT Center West Hollywood",
+                     "Gay and Lesbian Chamber of Commerce",
+                     "The OutReach Center",
+                     "LGBTQ Center Long Beach",
+                     "The South Bay LGBT Center",
+                     "San Fernando Valley LGBT Center",
+                     "LGBT Center of Orange County"]
+   
+    let descriptionList =
+        ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "GLBT business networking",
+            "Serves the LGBT community in Antelope Valley.",
+            "The Center engages, empowers and advocates to achieve a more equitable society and fosters an ever-improving quality of life for the LGBTQ community.",
+            "A focal point for the members of our community in the South Bay for education, social interaction, personal growth, and political power, and to foster public understanding of our community.",
+            "A broad based coalition made up of organizations serving the LGBT population in San Fernando Valley.",
+            "The LGBT Center Orange County provides services that ensures the well being and positive identity of the LGBTQ+ communities."]
     
     
     override func viewDidLoad() {
