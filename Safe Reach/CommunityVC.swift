@@ -17,7 +17,11 @@ class CommunityVC: UITableViewController {
                      "LgbtLongBeach",
                      "southbayLGBTcenter",
                      "SfvCenter",
-                     "ServiceCenterOC"]
+                     "ServiceCenterOC",
+                     "ieCenter",
+                     "DesertCenter",
+                     "SanDiegoCenter",
+                     "NorthCountyCenter"]
     
     let titleList = ["LGBT Center Los Angeles",
                      "LGBT Center West Hollywood",
@@ -26,7 +30,11 @@ class CommunityVC: UITableViewController {
                      "LGBTQ Center Long Beach",
                      "The South Bay LGBT Center",
                      "San Fernando Valley LGBT Center",
-                     "LGBT Center of Orange County"]
+                     "LGBT Center of Orange County",
+                     "Inland Empire Community Center",
+                     "LGBT Center of the Desert",
+                     "LGBT Center San Diego",
+                     "North County LGBTQ Resource Center"]
    
     let descriptionList =
         ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "GLBT business networking",
@@ -34,7 +42,11 @@ class CommunityVC: UITableViewController {
             "The Center engages, empowers and advocates to achieve a more equitable society and fosters an ever-improving quality of life for the LGBTQ community.",
             "A focal point for the members of our community in the South Bay for education, social interaction, personal growth, and political power, and to foster public understanding of our community.",
             "A broad based coalition made up of organizations serving the LGBT population in San Fernando Valley.",
-            "The LGBT Center Orange County provides services that ensures the well being and positive identity of the LGBTQ+ communities."]
+            "The LGBT Center Orange County provides services that ensures the well being and positive identity of the LGBTQ+ communities.",
+            "Promotes health and well being of youth and adults in the Riverside and San Bernardino communities providing support, education, and advocacy regarding sexual orientation and gender identity.",
+            "Creating vibrant community by enhancing the lives of LGBT people.",
+            "Enhance and sustain the health and well-being of the LGBT and HIV communities by providing activities, programs and services",
+            "Serves the LGBTQ community of North County San Diego."]
     
     
     override func viewDidLoad() {

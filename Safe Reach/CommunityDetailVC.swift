@@ -81,10 +81,38 @@ class CommunityDetailVC: UIViewController {
         }
         if detailTitle.text == "LGBT Center of Orange County"
         {
-            address.text = "1605 N. Spurgeon St.Santa Ana, CA 92701"
+            address.text = "1605 N. Spurgeon St. Santa Ana, CA 92701"
             phoneNumber.text = "714-953-5428"
             website.text = "www.lgbtcenteroc.org"
             hours.text = "M-F 10am-9pm Sat 10am-4pm"
+        }
+        if detailTitle.text == "Inland Empire Community Center"
+        {
+            address.text = "6864 Indiana Ave. Suite #104, Riverside, CA 92506"
+            phoneNumber.text = "951-293-4528"
+            website.text = "www.ie-lgbt.com"
+            hours.text = "Call for hours"
+        }
+        if detailTitle.text == "LGBT Center of the Desert"
+        {
+            address.text = "1301 North Palm Canyon Dr. 3rd Floor, Palm Springs, CA 92262"
+            phoneNumber.text = "760-416-7790"
+            website.text = "www.thecenterps.org"
+            hours.text = "M-F 8:30am-4:30pm"
+        }
+        if detailTitle.text == "LGBT Center San Diego"
+        {
+            address.text = "3909 Centre St., San Diego, CA 92103"
+            phoneNumber.text = "619-692-2077"
+            website.text = "www.thecentersd.org"
+            hours.text = "M-Th 9am-9pm, F 9am-5pm"
+        }
+        if detailTitle.text == "North County LGBTQ Resource Center"
+        {
+            address.text = "3220 Mission Ave. #2, Oceanside, CA 92058"
+            phoneNumber.text = "760-994-1690"
+            website.text = "www.ncresourcecenter.org"
+            hours.text = "M-F 12pm-8pm, Sat 10am-6pm"
         }
 
 
