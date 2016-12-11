@@ -500,7 +500,7 @@
                                     <outlet property="spiritDescription" destination="8hC-Eq-xYJ" id="cCS-Oe-XrF"/>
                                     <outlet property="spiritImage" destination="4y6-eM-gYG" id="xWn-8W-Xqm"/>
                                     <outlet property="spiritTitle" destination="M8L-tw-Vmb" id="5wF-Dd-Lzi"/>
-                                    <segue destination="8Ts-uw-IPn" kind="show" identifier="Spiritual" trigger="accessoryAction" id="gri-Bf-s7B"/>
+                                    <segue destination="8Ts-uw-IPn" kind="show" identifier="SpiritualDetail" id="DiJ-mg-Kj0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
