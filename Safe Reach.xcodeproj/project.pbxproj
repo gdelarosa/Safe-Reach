@@ -18,6 +18,12 @@
 		512A57D01DBDCDDE00E7FB7A /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57CF1DBDCDDE00E7FB7A /* Locations.swift */; };
 		512A57D31DBDCE0400E7FB7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57D11DBDCE0400E7FB7A /* MapViewController.swift */; };
 		512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512A57D21DBDCE0400E7FB7A /* VCMapView.swift */; };
+		512F51911DFE05480036A5BA /* HealthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F51901DFE05470036A5BA /* HealthVC.swift */; };
+		512F51931DFE05630036A5BA /* HealthDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F51921DFE05630036A5BA /* HealthDetailVC.swift */; };
+		512F51951DFE057A0036A5BA /* SocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F51941DFE057A0036A5BA /* SocialVC.swift */; };
+		512F51971DFE058E0036A5BA /* SocialDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F51961DFE058E0036A5BA /* SocialDetailVC.swift */; };
+		512F51991DFE059F0036A5BA /* SpiritualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F51981DFE059F0036A5BA /* SpiritualVC.swift */; };
+		512F519B1DFE05AF0036A5BA /* SpiritualDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512F519A1DFE05AF0036A5BA /* SpiritualDetailVC.swift */; };
 		514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514A9C8E1DDABD1B00505683 /* TableViewCell.swift */; };
 		515C6DAF1DEB6A6000CE7B40 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C6DAE1DEB6A6000CE7B40 /* CommunityVC.swift */; };
 		515C6DB11DEB6B0F00CE7B40 /* CommunityDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C6DB01DEB6B0F00CE7B40 /* CommunityDetailVC.swift */; };
@@ -69,6 +75,12 @@
 		512A57CF1DBDCDDE00E7FB7A /* Locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		512A57D11DBDCE0400E7FB7A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		512A57D21DBDCE0400E7FB7A /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		512F51901DFE05470036A5BA /* HealthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthVC.swift; sourceTree = "<group>"; };
+		512F51921DFE05630036A5BA /* HealthDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDetailVC.swift; sourceTree = "<group>"; };
+		512F51941DFE057A0036A5BA /* SocialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialVC.swift; sourceTree = "<group>"; };
+		512F51961DFE058E0036A5BA /* SocialDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialDetailVC.swift; sourceTree = "<group>"; };
+		512F51981DFE059F0036A5BA /* SpiritualVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritualVC.swift; sourceTree = "<group>"; };
+		512F519A1DFE05AF0036A5BA /* SpiritualDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritualDetailVC.swift; sourceTree = "<group>"; };
 		514A9C8E1DDABD1B00505683 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		515C6DAE1DEB6A6000CE7B40 /* CommunityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		515C6DB01DEB6B0F00CE7B40 /* CommunityDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityDetailVC.swift; sourceTree = "<group>"; };
@@ -183,6 +195,12 @@
 				514A9C8E1DDABD1B00505683 /* TableViewCell.swift */,
 				515C6DAE1DEB6A6000CE7B40 /* CommunityVC.swift */,
 				515C6DB01DEB6B0F00CE7B40 /* CommunityDetailVC.swift */,
+				512F51901DFE05470036A5BA /* HealthVC.swift */,
+				512F51921DFE05630036A5BA /* HealthDetailVC.swift */,
+				512F51941DFE057A0036A5BA /* SocialVC.swift */,
+				512F51961DFE058E0036A5BA /* SocialDetailVC.swift */,
+				512F51981DFE059F0036A5BA /* SpiritualVC.swift */,
+				512F519A1DFE05AF0036A5BA /* SpiritualDetailVC.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -550,14 +568,20 @@
 				512A57991DBDC06B00E7FB7A /* AppDelegate.swift in Sources */,
 				51D9996F1DE24F7F005F8448 /* LocationSearchTable.swift in Sources */,
 				512A57D01DBDCDDE00E7FB7A /* Locations.swift in Sources */,
+				512F519B1DFE05AF0036A5BA /* SpiritualDetailVC.swift in Sources */,
 				512A57D41DBDCE0400E7FB7A /* VCMapView.swift in Sources */,
 				514A9C911DDABD1B00505683 /* TableViewCell.swift in Sources */,
+				512F51951DFE057A0036A5BA /* SocialVC.swift in Sources */,
 				515C6DAF1DEB6A6000CE7B40 /* CommunityVC.swift in Sources */,
 				517781D81DE17C69005F7D89 /* OpenEventsTableViewController.swift in Sources */,
 				515C6DB11DEB6B0F00CE7B40 /* CommunityDetailVC.swift in Sources */,
 				51D999741DE2822F005F8448 /* AboutVC.swift in Sources */,
+				512F51931DFE05630036A5BA /* HealthDetailVC.swift in Sources */,
+				512F51911DFE05480036A5BA /* HealthVC.swift in Sources */,
 				517781D61DE17C4E005F7D89 /* APIManager.swift in Sources */,
 				517781CE1DE17C02005F7D89 /* Address.swift in Sources */,
+				512F51991DFE059F0036A5BA /* SpiritualVC.swift in Sources */,
+				512F51971DFE058E0036A5BA /* SocialDetailVC.swift in Sources */,
 				512A57CC1DBDCD9B00E7FB7A /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
