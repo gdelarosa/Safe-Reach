@@ -17,6 +17,7 @@ class HealthVC: UITableViewController {
                      "asfoc",
                      "ahh",
                      "apait",
+                     "apait",
                      "beingalive",
                      "bai",
                      "commonground",
