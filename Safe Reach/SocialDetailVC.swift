@@ -30,14 +30,14 @@ class SocialDetailVC: UIViewController {
         detailDescription.text = sentDescriptionData
         detailImageView.image = UIImage(named: sentImageData)
         
-        if detailTitle.text == "Bienestar Human Services Coachella "
+        if detailTitle.text == "Bienestar Human Services Coachella"
         {
             address.text = "53990 Enterprise Way, Coachella, CA 92236"
             phoneNumber.text = "760-398-3166"
             website.text = "www.bienestar.org"
             hours.text = "M-F 10am-7pm"
         }
-        if detailTitle.text == "Bienestar Human Services El Monte "
+        if detailTitle.text == "Bienestar Human Services El Monte"
         {
             address.text = "3131 Santa Anita Avenue, #109, El Monte, CA 91733"
             phoneNumber.text = "626-444-9453"

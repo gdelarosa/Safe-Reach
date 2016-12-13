@@ -37,7 +37,9 @@ class SpiritualVC: UITableViewController {
                      "North County LGBTQ Resource Center"]
     
     let descriptionList =
-        ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.", "GLBT business networking",
+        ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.",
+         "Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.",
+         "GLBT business networking",
          "Serves the LGBT community in Antelope Valley.",
          "The Center engages, empowers and advocates to achieve a more equitable society and fosters an ever-improving quality of life for the LGBTQ community.",
          "A focal point for the members of our community in the South Bay for education, social interaction, personal growth, and political power, and to foster public understanding of our community.",
