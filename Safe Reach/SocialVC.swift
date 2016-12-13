@@ -53,7 +53,7 @@ class SocialVC: UITableViewController {
                      "Mi Centro",
                      "My Friend's Place",
                      "Safe Place For Youth",
-                     "Triangel Square",
+                     "Triangle Square",
                      "The Village at Ed Gould Plaza"]
     
     let descriptionList =
