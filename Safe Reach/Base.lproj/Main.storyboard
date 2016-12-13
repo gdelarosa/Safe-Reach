@@ -54,18 +54,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="64O-tY-aZv" id="NXV-TY-vrX">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ehB-2f-Lqx">
-                                            <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                            <frame key="frameInset" minX="15" minY="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Deo-ai-bee">
-                                            <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                            <frame key="frameInset" minX="15" minY="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
@@ -249,7 +249,6 @@
                     <connections>
                         <segue destination="xwn-Da-d4t" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="UXz-Zh-yeL" kind="relationship" relationship="viewControllers" id="Krx-9G-b2f"/>
-                        <segue destination="lFF-2L-ien" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="mzM-gX-hBO" kind="relationship" relationship="viewControllers" id="SbA-5X-UpX"/>
                     </connections>
                 </tabBarController>
@@ -420,7 +419,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sHM-86-CxC" id="x9G-8T-PGC">
-                                    <frame key="frameInset" width="342" height="74"/>
+                                    <frame key="frameInset" width="342" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lan-on-5oc">
@@ -474,7 +473,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A2r-tu-B2P" id="HN9-ug-iNg">
-                                    <frame key="frameInset" width="342" height="74"/>
+                                    <frame key="frameInset" width="342" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4y6-eM-gYG">
@@ -528,7 +527,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vlX-H0-FKF" id="ceD-eK-2tS">
-                                    <frame key="frameInset" width="342" height="74"/>
+                                    <frame key="frameInset" width="342" height="75"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWM-yS-VXX">
@@ -644,25 +643,6 @@
             </objects>
             <point key="canvasLocation" x="4166" y="2245"/>
         </scene>
-        <!--Social-->
-        <scene sceneID="uKV-zE-LKk">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFF-2L-ien" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" image="icon_calendar" id="cPa-gy-q4n"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mt6-Uc-yKQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="S3T-VH-dfE" kind="relationship" relationship="rootViewController" id="zpu-9N-ayj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UaH-7K-Igh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="244" y="718"/>
-        </scene>
         <!--About Nav-->
         <scene sceneID="xiV-tG-5fC">
             <objects>
@@ -681,35 +661,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Zm-c0-f65" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1162" y="743"/>
-        </scene>
-        <!--Open Events Table View Controller-->
-        <scene sceneID="zX1-xz-w3u">
-            <objects>
-                <tableViewController id="S3T-VH-dfE" customClass="OpenEventsTableViewController" customModule="Safe_Reach" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qgj-UI-4bV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="social cell" id="tGn-ha-zCL">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGn-ha-zCL" id="Lku-I2-ayu">
-                                    <frame key="frameInset" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="S3T-VH-dfE" id="cnM-bx-1gd"/>
-                            <outlet property="delegate" destination="S3T-VH-dfE" id="mTX-7Y-6bc"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Fzu-f3-TCu"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIz-ST-2fA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="969" y="717"/>
         </scene>
         <!--Health DetailVC-->
         <scene sceneID="aFb-jd-tUI">
@@ -940,7 +891,6 @@
     <resources>
         <image name="browser" width="92" height="74"/>
         <image name="homeRed" width="92" height="92"/>
-        <image name="icon_calendar" width="32" height="32"/>
         <image name="icon_info_alt" width="32" height="32"/>
         <image name="icon_map" width="28" height="28"/>
         <image name="icon_ul" width="28" height="20"/>
