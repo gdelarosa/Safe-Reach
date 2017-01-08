@@ -30,56 +30,56 @@ class SocialDetailVC: UIViewController {
         detailDescription.text = sentDescriptionData
         detailImageView.image = UIImage(named: sentImageData)
         
-        if detailTitle.text == "Bienestar Human Services Coachella"
+        if detailTitle.text == "Bienestar Coachella"
         {
             address.text = "53990 Enterprise Way, Coachella, CA 92236"
             phoneNumber.text = "760-398-3166"
             website.text = "www.bienestar.org"
             hours.text = "M-F 10am-7pm"
         }
-        if detailTitle.text == "Bienestar Human Services El Monte"
+        if detailTitle.text == "Bienestar El Monte"
         {
             address.text = "3131 Santa Anita Avenue, #109, El Monte, CA 91733"
             phoneNumber.text = "626-444-9453"
             website.text = "www.bienestar.org"
             hours.text = "M 8:30am-1pm, Tue,Thur 1pm-5:30pm"
         }
-        if detailTitle.text == "Bienestar Human Services Hollywood"
+        if detailTitle.text == "Bienestar Hollywood"
         {
             address.text = "4955 Sunset Boulevard Los Angeles, CA 90027"
             phoneNumber.text = "323-660-9680"
             website.text = "www.bienestar.org"
             hours.text = "M-F 10am-7pm"
         }
-        if detailTitle.text == "Bienestar Human Services Long Beach"
+        if detailTitle.text == "Bienestar Long Beach"
         {
             address.text = "1464 Cherry Avenue Long Beach, CA 90813"
             phoneNumber.text = "562-438-5800"
             website.text = "www.bienestar.org"
             hours.text = "M-F 10am-7pm"
         }
-        if detailTitle.text == "Bienestar Human Services East Los Angeles"
+        if detailTitle.text == "Bienestar East Los Angeles"
         {
             address.text = "5326 E. Beverly Blvd, Los Angeles, CA 90022"
             phoneNumber.text = "323-727-7985"
             website.text = "www.bienestar.org"
             hours.text = "M-F 10am-7pm"
         }
-        if detailTitle.text == "Bienestar Human Services Pomona"
+        if detailTitle.text == "Bienestar Pomona"
         {
             address.text = "180 E. Mission Boulevard Pomona, CA 91766"
             phoneNumber.text = "909-397-7660"
             website.text = "wwww.bienestar.org"
             hours.text = "M-F 10am-7pm"
         }
-        if detailTitle.text == "Bienestar Human Services San Fernando Valley"
+        if detailTitle.text == "Bienestar San Fernando Valley"
         {
             address.text = "8134 Van Nuys Boulevard, #200 Panorama City, CA 91402"
             phoneNumber.text = "818-908-3820"
             website.text = "www.bienestar.org"
             hours.text = "M-F 10am-7pm."
         }
-        if detailTitle.text == "Bienestar Human Services South Los Angeles"
+        if detailTitle.text == "Bienestar South Los Angeles"
         {
             address.text = "130 W Manchester Ave, Los Angeles, CA 90003"
             phoneNumber.text = "323-752-3100"
