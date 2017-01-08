@@ -19,7 +19,9 @@ class SpiritualVC: UITableViewController {
                      "muslimsfor",
                      "redlandsunited",
                      "sanb",
-                     "stjames"]
+                     "stjames",
+                     "unitarian",
+                     "unity"]
     
     let titleList = ["All Saints Episcopal Church",
                      "Ashram West",
@@ -31,24 +33,22 @@ class SpiritualVC: UITableViewController {
                      "Redlands United Church of Christ",
                      "San Bernardino United Church of Christ",
                      "St. James Episcopal Church",
-                     "Temple Beth El",
                      "Unitarian Unverisalist Church of Riverside",
-                     "Unity Fellowship of Christ Inland Valley",
-                     "World Harvest Faith Center"]
+                     "Unity Fellowship of Christ Inland Valley"]
     
     let descriptionList =
-        ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.",
-         "Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.",
-         "GLBT business networking",
-         "Serves the LGBT community in Antelope Valley.",
-         "The Center engages, empowers and advocates to achieve a more equitable society and fosters an ever-improving quality of life for the LGBTQ community.",
-         "A focal point for the members of our community in the South Bay for education, social interaction, personal growth, and political power, and to foster public understanding of our community.",
-         "A broad based coalition made up of organizations serving the LGBT population in San Fernando Valley.",
-         "The LGBT Center Orange County provides services that ensures the well being and positive identity of the LGBTQ+ communities.",
-         "Promotes health and well being of youth and adults in the Riverside and San Bernardino communities providing support, education, and advocacy regarding sexual orientation and gender identity.",
-         "Creating vibrant community by enhancing the lives of LGBT people.",
-         "Enhance and sustain the health and well-being of the LGBT and HIV communities by providing activities, programs and services",
-         "Serves the LGBTQ community of North County San Diego."]
+        [" A lively, inclusive, and welcoming faith community that celebrates the presense of God in all of life's challenges.",
+         "Gay centered Spiritual instruction and groups based on traditional Hindu Tantra.",
+         "An inclusive community of progressive lesbian, gay, bisexual, transgender and heterosexual Jews, our families and friends.",
+         "An open and affirming body of Christ. LGBTQA family. Located in the annex of Bethel Congregational UCC.",
+         "We believe we have a lot to offer including meaningful worship, excellent programs, and a wonderful community of people who will walk with you in your journey of faith.",
+         "An Open and Affirming congregation.",
+         "GLBT inclusive Muslim voice.",
+         "An inclusive community in Redlands.",
+         "An inclusive church in San Bernardino.",
+         "An inclusive church in Los Angeles.",
+         "An inclusive church in Riverside.",
+         "An inclusive church in Riverside."]
     
     
     override func viewDidLoad() {

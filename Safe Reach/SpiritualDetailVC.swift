@@ -30,89 +30,89 @@ class SpiritualDetailVC: UIViewController {
         detailDescription.text = sentDescriptionData
         detailImageView.image = UIImage(named: sentImageData)
         
-        if detailTitle.text == "LGBT Center Los Angeles"
+        if detailTitle.text == "All Saints Episcopal Church"
         {
-            address.text = "1625 N. Schrader Blvd. Los Angeles, CA 90028"
-            phoneNumber.text = "323-993-7400"
-            website.text = "https://lalgbtcenter.org/"
-            hours.text = "M-F 8am-8pm"
+            address.text = "3847 Terracina Drive Riverside, CA 92506"
+            phoneNumber.text = "951-683-8466"
+            website.text = "https://allsaintsriverside.org"
+            hours.text = "Sunday 8am and 10am"
         }
-        if detailTitle.text == "LGBT Center West Hollywood"
+        if detailTitle.text == "Ashram West"
         {
-            address.text = "8745 Santa Monica Blvd. 2nd Floor, West Hollywood, CA 90069"
-            phoneNumber.text = "323-957-5280"
-            website.text = "https://lalgbtcenter.org/"
-            hours.text = "M-F 11am - 2pm, 4pm-7pm"
+            address.text = "2070 Lyric Avenue Los Angeles, CA 90039"
+            phoneNumber.text = "323-906-1744"
+            website.text = "https://gaytantra.org"
+            hours.text = "Call for instruction or counseling"
         }
-        if detailTitle.text == "Gay and Lesbian Chamber of Commerce"
+        if detailTitle.text == "Beth Chayim Chadashim"
         {
-            address.text = "8424 Santa Monica Blvd. West Hollywood, CA 90069"
-            phoneNumber.text = "323-570-4697"
-            website.text = "www.laglcc.org"
-            hours.text = "Call for hours"
+            address.text = "6090 W. Pico Boulevard Los Angeles, CA 90035"
+            phoneNumber.text = "323-931-7023"
+            website.text = "https://bcc-la.org"
+            hours.text = "Call for service hours"
         }
-        if detailTitle.text == "The OutReach Center"
+        if detailTitle.text == "Chapel of Peace Christian Church"
         {
-            address.text = "44845 Cedar Ave. Lancaster, CA 923534"
-            phoneNumber.text = "661-927-7433"
-            website.text = "www.outreachcenterav.org"
-            hours.text = "Call for hours."
+            address.text = "535 N Euclid Ave, Ontario, CA"
+            phoneNumber.text = "909-908-8405"
+            website.text = " "
+            hours.text = "Tuesday 7pm-8pm, Sunday 10:30-12pm"
         }
-        if detailTitle.text == "LGBTQ Center Long Beach"
+        if detailTitle.text == "First Congregational Church of Riverside"
         {
-            address.text = "2017 E. 4th St. Long Beach, CA 90814"
-            phoneNumber.text = "562-434-4455"
-            website.text = "www.centerlb.org"
-            hours.text = "M-Sat 10am-9pm"
+            address.text = "3504 Mission Inn Ave. Riverside, CA 92502"
+            phoneNumber.text = "951-684-2494"
+            website.text = "https://fccriverside.org"
+            hours.text = "Sunday 10am, second Sunday of month 5pm."
         }
-        if detailTitle.text == "The South Bay LGBT Center"
+        if detailTitle.text == "Mt. Hollywood Congregational Church"
         {
-            address.text = "16610 Crenshaw Blvd. Torrance, CA 90504"
-            phoneNumber.text = "310-328-6550"
-            website.text = "www.southbaycenter.org"
-            hours.text = "M 7pm-9pm, T 4pm-10pm, F 7pm-10pm, TH 4:30pm-10pm, Sat 1pm-6pm"
+            address.text = "1733 N. New Hampshire Avenue Los Angeles, CA 90027"
+            phoneNumber.text = "323-300-4066"
+            website.text = "https://mounthollywood.org"
+            hours.text = "Call for service hours."
         }
-        if detailTitle.text == "San Fernando Valley LGBT Center"
+        if detailTitle.text == "Muslims for Progressive Values"
         {
-            address.text = "11243 Glenoaks Blvd. #11, Pacoima, CA 91331"
-            phoneNumber.text = "818-890-5428"
-            website.text = "www.sfvlgbtcenter.org"
-            hours.text = "Call for hours."
+            address.text = "1626 N. Wilcox Avenue, #702 Los Angeles, CA 90028"
+            phoneNumber.text = "323-696-2678"
+            website.text = "https://mpvusa.org"
+            hours.text = "Call for service hours."
         }
-        if detailTitle.text == "LGBT Center of Orange County"
+        if detailTitle.text == "Redlands United Church of Christ"
         {
-            address.text = "1605 N. Spurgeon St. Santa Ana, CA 92701"
-            phoneNumber.text = "714-953-5428"
-            website.text = "www.lgbtcenteroc.org"
-            hours.text = "M-F 10am-9pm Sat 10am-4pm"
+            address.text = "168 Bellevue Ave. Redlands, CA 92373"
+            phoneNumber.text = "909-793-3520"
+            website.text = "https://uccredlands.org"
+            hours.text = "Call for service hours."
         }
-        if detailTitle.text == "Inland Empire Community Center"
+        if detailTitle.text == "San Bernardino United Church of Christ"
         {
-            address.text = "6864 Indiana Ave. Suite #104, Riverside, CA 92506"
-            phoneNumber.text = "951-293-4528"
-            website.text = "www.ie-lgbt.com"
-            hours.text = "Call for hours"
+            address.text = "3041 N. Sierra Way San Bernardino, CA 92405"
+            phoneNumber.text = "909-886-4911"
+            website.text = "https://sbucc.org"
+            hours.text = "Call for service hours."
         }
-        if detailTitle.text == "LGBT Center of the Desert"
+        if detailTitle.text == "St. James Episcopal Church"
         {
-            address.text = "1301 North Palm Canyon Dr. 3rd Floor, Palm Springs, CA 92262"
-            phoneNumber.text = "760-416-7790"
-            website.text = "www.thecenterps.org"
-            hours.text = "M-F 8:30am-4:30pm"
+            address.text = "3903 Wilshire Boulevard Los Angeles, CA 90010"
+            phoneNumber.text = "213-388-3417"
+            website.text = "https://stjla.org"
+            hours.text = "Call for service hours."
         }
-        if detailTitle.text == "LGBT Center San Diego"
+        if detailTitle.text == "Unitarian Universalist Church of Riverside"
         {
             address.text = "3909 Centre St., San Diego, CA 92103"
-            phoneNumber.text = "619-692-2077"
-            website.text = "www.thecentersd.org"
-            hours.text = "M-Th 9am-9pm, F 9am-5pm"
+            phoneNumber.text = "951-686-6515"
+            website.text = "https://uuchurchofriverside.org"
+            hours.text = "Call for service hours."
         }
-        if detailTitle.text == "North County LGBTQ Resource Center"
+        if detailTitle.text == "Unity Fellowship of Christ Church Riverside"
         {
-            address.text = "3220 Mission Ave. #2, Oceanside, CA 92058"
-            phoneNumber.text = "760-994-1690"
-            website.text = "www.ncresourcecenter.org"
-            hours.text = "M-F 12pm-8pm, Sat 10am-6pm"
+            address.text = "2025 Chicago Ave., Suite A20 Riverside, CA 92506"
+            phoneNumber.text = "951-848-6070"
+            website.text = "https://unityfellowshipchurch.org"
+            hours.text = "Call for service hours."
         }
         
         
