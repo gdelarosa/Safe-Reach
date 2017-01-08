@@ -10,31 +10,31 @@ import UIKit
 
 class SpiritualVC: UITableViewController {
 
-    let imageList = ["McDonaldLA",
-                     "LGBTCenterWeHo",
-                     "LaChamber",
-                     "OutReachLanc",
-                     "LgbtLongBeach",
-                     "southbayLGBTcenter",
-                     "SfvCenter",
-                     "ServiceCenterOC",
-                     "ieCenter",
-                     "DesertCenter",
-                     "SanDiegoCenter",
-                     "NorthCountyCenter"]
+    let imageList = ["allsaints",
+                     "ashram",
+                     "beth",
+                     "chapelofpeace",
+                     "firstcong",
+                     "mthollywood",
+                     "muslimsfor",
+                     "redlandsunited",
+                     "sanb",
+                     "stjames"]
     
-    let titleList = ["LGBT Center Los Angeles",
-                     "LGBT Center West Hollywood",
-                     "Gay and Lesbian Chamber of Commerce",
-                     "The OutReach Center",
-                     "LGBTQ Center Long Beach",
-                     "The South Bay LGBT Center",
-                     "San Fernando Valley LGBT Center",
-                     "LGBT Center of Orange County",
-                     "Inland Empire Community Center",
-                     "LGBT Center of the Desert",
-                     "LGBT Center San Diego",
-                     "North County LGBTQ Resource Center"]
+    let titleList = ["All Saints Episcopal Church",
+                     "Ashram West",
+                     "Beth Chayim Chadashim",
+                     "Chapel of Peace Christian Church",
+                     "First Congregational Church of Riverside",
+                     "Mt. Hollywood Congregational Church",
+                     "Muslims for Progressive Values",
+                     "Redlands United Church of Christ",
+                     "San Bernardino United Church of Christ",
+                     "St. James Episcopal Church",
+                     "Temple Beth El",
+                     "Unitarian Unverisalist Church of Riverside",
+                     "Unity Fellowship of Christ Inland Valley",
+                     "World Harvest Faith Center"]
     
     let descriptionList =
         ["Health, Social Services and Housing, Culture and Education, Leadership and Advocacy.",
