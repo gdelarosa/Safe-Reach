@@ -33,9 +33,8 @@ class SpiritualVC: UITableViewController {
                      "Redlands United Church of Christ",
                      "San Bernardino United Church of Christ",
                      "St. James Episcopal Church",
-                     "Unitarian Unverisalist Church of Riverside",
-                     "Unity Fellowship of Christ Inland Valley"]
-    
+                     "Unitarian Universalist Church of Riverside",
+                     "Unity Fellowship of Christ Church Riverside"]
     let descriptionList =
         [" A lively, inclusive, and welcoming faith community that celebrates the presense of God in all of life's challenges.",
          "Gay centered Spiritual instruction and groups based on traditional Hindu Tantra.",
