@@ -70,7 +70,7 @@ class SpiritualDetailVC: UIViewController {
             address.text = "1733 N. New Hampshire Avenue Los Angeles, CA 90027"
             phoneNumber.text = "323-300-4066"
             website.text = "http://www.mounthollywood.org/"
-            hours.text = "Call for service hours."
+            hours.text = "Sunday 10:30am worship."
         }
         if detailTitle.text == "Muslims for Progressive Values"
         {
@@ -91,18 +91,18 @@ class SpiritualDetailVC: UIViewController {
             address.text = "3041 N. Sierra Way San Bernardino, CA 92405"
             phoneNumber.text = "909-886-4911"
             website.text = "http://www.sbucc.org/"
-            hours.text = "Call for service hours."
+            hours.text = "Sunday 10am worship."
         }
         if detailTitle.text == "St. James Episcopal Church"
         {
             address.text = "3903 Wilshire Boulevard Los Angeles, CA 90010"
             phoneNumber.text = "213-388-3417"
             website.text = "https://stjla.org"
-            hours.text = "Call for service hours."
+            hours.text = "Sunday 8am, 10:30am, 12:15pm (Korean) worship"
         }
         if detailTitle.text == "Unitarian Universalist Church of Riverside"
         {
-            address.text = "3909 Centre St., San Diego, CA 92103"
+            address.text = "3657 Lemon St. Riverside, CA 92501"
             phoneNumber.text = "951-686-6515"
             website.text = "www.uuchurchofriverside.org/"
             hours.text = "Sunday 10am Service."
