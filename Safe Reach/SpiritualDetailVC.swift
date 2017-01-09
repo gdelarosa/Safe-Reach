@@ -34,21 +34,21 @@ class SpiritualDetailVC: UIViewController {
         {
             address.text = "3847 Terracina Drive Riverside, CA 92506"
             phoneNumber.text = "951-683-8466"
-            website.text = "https://allsaintsriverside.org"
+            website.text = "http://www.allsaintsriverside.org/"
             hours.text = "Sunday 8am and 10am"
         }
         if detailTitle.text == "Ashram West"
         {
             address.text = "2070 Lyric Avenue Los Angeles, CA 90039"
             phoneNumber.text = "323-906-1744"
-            website.text = "https://gaytantra.org"
+            website.text = "http://www.gaytantra.org/"
             hours.text = "Call for instruction or counseling"
         }
         if detailTitle.text == "Beth Chayim Chadashim"
         {
             address.text = "6090 W. Pico Boulevard Los Angeles, CA 90035"
             phoneNumber.text = "323-931-7023"
-            website.text = "https://bcc-la.org"
+            website.text = "http://www.bcc-la.org/"
             hours.text = "Call for service hours"
         }
         if detailTitle.text == "Chapel of Peace Christian Church"
@@ -62,14 +62,14 @@ class SpiritualDetailVC: UIViewController {
         {
             address.text = "3504 Mission Inn Ave. Riverside, CA 92502"
             phoneNumber.text = "951-684-2494"
-            website.text = "https://fccriverside.org"
+            website.text = "http://www.fccriverside.org/"
             hours.text = "Sunday 10am, second Sunday of month 5pm."
         }
         if detailTitle.text == "Mt. Hollywood Congregational Church"
         {
             address.text = "1733 N. New Hampshire Avenue Los Angeles, CA 90027"
             phoneNumber.text = "323-300-4066"
-            website.text = "https://mounthollywood.org"
+            website.text = "http://www.mounthollywood.org/"
             hours.text = "Call for service hours."
         }
         if detailTitle.text == "Muslims for Progressive Values"
@@ -83,14 +83,14 @@ class SpiritualDetailVC: UIViewController {
         {
             address.text = "168 Bellevue Ave. Redlands, CA 92373"
             phoneNumber.text = "909-793-3520"
-            website.text = "https://uccredlands.org"
+            website.text = "http://uccredlands.org/"
             hours.text = "Call for service hours."
         }
         if detailTitle.text == "San Bernardino United Church of Christ"
         {
             address.text = "3041 N. Sierra Way San Bernardino, CA 92405"
             phoneNumber.text = "909-886-4911"
-            website.text = "https://sbucc.org"
+            website.text = "http://www.sbucc.org/"
             hours.text = "Call for service hours."
         }
         if detailTitle.text == "St. James Episcopal Church"
@@ -104,15 +104,15 @@ class SpiritualDetailVC: UIViewController {
         {
             address.text = "3909 Centre St., San Diego, CA 92103"
             phoneNumber.text = "951-686-6515"
-            website.text = "https://uuchurchofriverside.org"
-            hours.text = "Call for service hours."
+            website.text = "www.uuchurchofriverside.org/"
+            hours.text = "Sunday 10am Service."
         }
         if detailTitle.text == "Unity Fellowship of Christ Church Riverside"
         {
             address.text = "2025 Chicago Ave., Suite A20 Riverside, CA 92506"
             phoneNumber.text = "951-848-6070"
-            website.text = "https://unityfellowshipchurch.org"
-            hours.text = "Call for service hours."
+            website.text = "http://www.unityfellowshipchurch.org"
+            hours.text = "Sunday 12pm Worship."
         }
         
         
